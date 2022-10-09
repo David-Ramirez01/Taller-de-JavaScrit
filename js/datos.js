@@ -43,3 +43,52 @@ function reincio(e) {
     rta.textContent = "";
 }
 
+
+//Ejercicio 2
+let ta = 0;
+let a1 = 0;
+let a2 = 0;
+let a3 = 0;
+function CalcPEdad(e){
+    e.preventDefault();
+    const ed = document.getElementById("E_Animal");
+    const rsp = document.getElementById("rst")
+    if (parseInt(ed.value) <= 1){
+        a1++;
+        ta++;
+        rsp.textContent = "Guardado con exito en Jovenes"
+    }else if (parseInt(ed.value) > 1 && parseInt(ed.value) <= 3){
+        a2++;
+        ta++;
+        rsp.textContent = "Guardado con exito en Adultos"
+    } else if (parseInt(ed.value) > 3){
+        a3++;
+        ta++;
+        rsp.textContent = "Guardado con exito en ancianos"
+    }else{
+        rsp.textContent = "porfavor ingrese una edad"
+    }
+}
+let p1 = 0;
+let p2 = 0;
+let p3 = 0;
+function Porcentages(e) {
+    e.preventDefault();
+    const rsp = document.getElementById("rst")
+    p1 = (a1/ta)*100;
+    p2 = (a2/ta)*100;
+    p3 = (a3/ta)*100;
+    rsp.textContent = `Los porcentajes de animales por edad son:
+    ${p1.toFixed(2)}% para los jovenes,
+    ${p2.toFixed(2)}% para los adultos,
+    ${p3.toFixed(2)}% para los ancianos.`;
+}
+
+function reincio2(e) {
+    e.preventDefault();
+    const rta = document.getElementById("rst")
+    let p1 = 0;
+    let p2 = 0;
+    let p3 = 0;
+    rsp.textContent = "";
+}
