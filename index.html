@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de JavaS</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <Script src="js/datos.js"></Script>
+    <Script type="text/javascript" src="js/datos.js"></Script>
 </head>
 <body>
     <div class="container">
-        
+        <div class="punto_uno">
+            <h2 class="punto">
+                Primer punto
+            </h2>
+            <form class="Rta_1">
+                <input class="Caja" type="text" name="placa" id="N_placa" placeholder="ingrese ultimo # de placa">
+                <input class="Boton" type="submit" value="Color de placa" onclick="ColorPla(event)">
+                <input class="Boton" type="submit" value="Limpiar lista" onclick="reincio(event)">
+                <h4 id="rsta">
+                </h4>
+            </form>
+        </div>
     </div>
 </body>
 </html>
