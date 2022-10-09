@@ -92,3 +92,24 @@ function reincio2(e) {
     let p3 = 0;
     rsp.textContent = "";
 }
+
+//Ejercicio 3
+let sa = 0;
+function salario(e) {
+    e.preventDefault();
+    const rs = document.getElementById("rsp")
+    const ht = document.getElementById("H_traba")
+    if (parseInt(ht.value) <= 40) {
+        sa = ht.value * 20;
+        rs.textContent = `El salario de esta semana es ${sa}`;
+    }else{
+        sa = 800 + ( (ht.value - 40) * 25);
+        rs.textContent = `El salario de esta semana es ${sa}`;
+    }
+}
+function reincio3(e) {
+    e.preventDefault();
+    const rs = document.getElementById("rsp")
+    let sa = 0;
+    rsp.textContent = "";
+}
