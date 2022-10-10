@@ -18,7 +18,7 @@
                 <input class="Caja" type="text" name="placa" id="N_placa" placeholder="ingrese ultimo # de placa">
                 <input class="Boton" type="submit" value="Color de placa" onclick="ColorPla(event)">
                 <input class="Boton" type="submit" value="Limpiar lista" onclick="reincio(event)">
-                <h4 id="rsta">
+                <h4 id="rspt1">
                 </h4>
             </form>
         </div>
@@ -26,12 +26,12 @@
             <h2 class="punto">
                 Punto Dos
             </h2>
-            <form class="Rta_1">
+            <form class="Rta_2">
                 <input class="Caja" type="text" name="e_animal" id="E_Animal" placeholder="Edad del Animal">
                 <input class="Boton" type="submit" value="Guardar" onclick="CalcPEdad(event)">
                 <input class="Boton" type="submit" value="Calcular porcentajes" onclick="Porcentages(event)">
                 <input class="Boton" type="submit" value="Limpiar lista" onclick="reincio2(e)">
-                <h4 id="rst">
+                <h4 id="rspt2">
                 </h4>
             </form>
         </div>
@@ -39,11 +39,29 @@
             <h2 class="punto">
                 Punto Tres
             </h2>
-            <form class="Rta_1">
+            <form class="Rta_3">
                 <input class="Caja" type="text" name="Horas" id="H_traba" placeholder="Horas trabajadas">
                 <input class="Boton" type="submit" value="Calcular Salario" onclick="salario(event)">
                 <input class="Boton" type="submit" value="Limpiar" onclick="reincio3(event)">
-                <h4 id="rsp">
+                <h4 id="rspt3">
+                </h4>
+            </form>
+        </div>
+        <div class="punto_Cuatro">
+            <h2 class="punto">
+                Punto Cuatro
+            </h2>
+            <form class="Rta_4">
+                <input class="Caja" type="text" name="Horas" id="Edad" placeholder="Digite edad"><br>
+                <select id="Gender" class="Seleccion">
+                    <option value="">     </option>
+                    <option value="Male">Hombre</option>
+                    <option value="Female">Mujer</option>
+                </select><br>
+                <input class="Boton" type="submit" value="Guardar" onclick="Guard_edades(event)">
+                <input class="Boton" type="submit" value="Promedio Edades" onclick="Promedio(event)">
+                <input class="Boton" type="submit" value="Limpiar" onclick="reincio4(event)">
+                <h4 id="rspt4">
                 </h4>
             </form>
         </div>

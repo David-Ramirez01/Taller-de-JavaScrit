@@ -20,6 +20,7 @@
     background: lightblue;
     box-shadow: 1px 3px 5px #000;
     border: 1px solid #ffffffc8;
+    cursor: pointer;
 }
 
 .punto{
@@ -35,4 +36,14 @@
     background: rgba(186, 178, 178, 0.745);
     font-size: 14px;
     font-weight: bold;
+}
+.Seleccion{
+    border: 1px solid #4ca1dac8;
+    margin-bottom: 10px;
+    padding: 10px 9px;
+}
+.container{
+    margin: 20px;
+    padding: auto;
+    box-sizing: border-box;
 }
