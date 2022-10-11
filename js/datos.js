@@ -258,9 +258,9 @@ function compp(e) {
     }
     ppt = sum /pp;
     if (ppt > po) {
-        rspt6.textContent = `Subio de Peso`;
+        rspt6.textContent = `Subio de Peso ${ppt-po}`;
     }else if (ppt < po) {
-        rspt6.textContent = `Bajo de Peso`;
+        rspt6.textContent = `Bajo de Peso ${ppt-po}`;
     }else{
         rspt6.textContent = `No subio ni bajo`;
     }
@@ -276,4 +276,45 @@ function reinicio6(e) {
     pp = 0;
     sum = 0;
     rspt6.textContent = "";
+}
+
+//Ejercicio 7
+let precios_s = [];
+let itm = 0;
+let preitm = 0;
+
+//funcion guardar precios
+function guardar_precio(e){
+    e.preventDefault();
+    const rspt7 = document.getElementById("rspt7");
+    const pres_prod = document.getElementById("PresPro");
+    const num_i = document.getElementById("Num_i");
+    preitm = parseInt(pres_prod.value);
+    itm = parseInt(num_i.value);
+    precios_s.push((preitm*itm));
+    rspt7.textContent = `Guardado ${preitm*itm}`;
+}
+
+//Funcion Sumar todo
+let suma_c = 0;
+let ptp = 0;
+function suma_cost(e) {
+    e.preventDefault();
+    const rspt7 = document.getElementById("rspt7");
+    for (let i = 0; i < precios_s.length; i++) {
+        suma_c += precios_s[i];
+    }
+    ptp = suma_c;
+    rspt7.textContent = `Total a pagar =${ptp}`;
+}
+
+//limpiar lista 7
+function reinicio7(e) {
+    e.preventDefault();
+    const rspt7 = document.getElementById("rspt7");
+    precios_s = [];
+    itm = 0;
+    preitm = 0;
+    suma_c= 0;
+    rspt7.textContent = "";
 }
