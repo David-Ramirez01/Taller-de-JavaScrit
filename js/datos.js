@@ -444,3 +444,51 @@ function Reinicio10(e) {
     rspt10.textContent="";
 }
 //Ejercicio 11
+
+let sumato = 0;
+let productoria = 1;
+let prom = 0;
+let prim = [];
+let con = 0;
+
+    
+
+function Resultados_op(e){
+    e.preventDefault();
+    const rspt11 = document.getElementById("rspt11");
+    const numi = document.getElementById("NumI");
+    const Numf = document.getElementById("NumF");
+    for (let i= parseInt(numi.value); i < parseInt(Numf.value); i++){
+        isPrime(i);
+        if (isPrime(i) == true) {
+            prim.push(i);
+            con++;
+        }
+    }
+    for (let i = 0; i < prim.length; i++) {
+        sumato += prim[i];
+        productoria *= prim[i];
+    }
+    prom = (prim.length*con);
+    rspt11.textContent= `La sumatoria es: ${sumato} , La productoria es: ${productoria} y el promedio es: ${prom}`;
+}
+
+function isPrime(n) {
+    if (n === 0) return false;
+    var limit = Math.round(Math.sqrt(n));
+    for (var i = 2; i <= limit; i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+
+function reinicio11(e) {
+    e.preventDefault();
+    const rspt11 = document.getElementById("rspt11");
+    sumato = 0;
+    productoria = 1;
+    prom = 0;
+    prim = [];
+    con = 0;
+    rspt11.textContent= "";
+}
