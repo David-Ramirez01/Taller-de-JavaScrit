@@ -366,3 +366,33 @@ function reinicio8(e) {
     N_P = "";
     rspt8.textContent = "";
 }
+
+//Ejercicio 9
+let com = 0;
+
+//funcion ejercicio 9
+function Calcu_Com(e) {
+    e.preventDefault();
+    const rspt9 = document.getElementById("rspt9");
+    const vv = document.getElementById("VV");
+    if (parseInt(vv.value) <= 20 ) {
+        com = ((parseInt(vv.value)*10)/100);
+    }else if (parseInt(vv.value) > 20 && parseInt(vv.value) < 40){
+        com = ((parseInt(vv.value)*15)/100);
+    }else if (parseInt(vv.value) >= 40 && parseInt(vv.value) < 80 ){
+        com = ((parseInt(vv.value)*20)/100);
+    }else if (parseInt(vv.value) >= 80 && parseInt(vv.value) < 160){
+        com = ((parseInt(vv.value)*25)/100);
+    }else{
+        com = ((parseInt(vv.value)*30)/100);
+    }
+    rspt9.textContent = `La comision es de:${com} millon`;
+}
+
+//Limpiar Lista 9
+function reinicio9(e) {
+    e.preventDefault();
+    const rspt9 = document.getElementById("rspt9");
+    com = 0;
+    rspt9.textContent="";
+}
