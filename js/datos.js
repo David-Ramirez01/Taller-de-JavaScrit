@@ -223,3 +223,57 @@ function reincio5(e) {
     n = 0;
     rspt5.textContent = "";
 }
+
+//Ejercicio 6
+let pt = [];
+let po = 0;
+let pp = 0;
+let sum = 0;
+//funcon gurdar peso original
+function g_po(e) {
+    e.preventDefault();
+    const rspt6 = document.getElementById("rspt6");
+    const gpo = document.getElementById("OrgPes");
+    po = parseInt(gpo.value);
+    rspt6.textContent = `Guardado peso original`;
+}
+
+//funcion guardar pesos diferentes
+function  gpp(e) {
+    e.preventDefault();
+    const rspt6 = document.getElementById("rspt6");
+    const gpp = document.getElementById("Peso_V");
+    pt.push(parseInt(gpp.value));
+    pp++;
+    rspt6.textContent = `Guardado con Exito ${pt}`;
+}
+
+//Comparar peso original y diferetes
+let ppt=0;
+function compp(e) {
+    e.preventDefault();
+    const rspt6 = document.getElementById("rspt6");
+    for (let i = 0; i < pt.length; i++) {
+        sum += pt[i];
+    }
+    ppt = sum /pp;
+    if (ppt > po) {
+        rspt6.textContent = `Subio de Peso`;
+    }else if (ppt < po) {
+        rspt6.textContent = `Bajo de Peso`;
+    }else{
+        rspt6.textContent = `No subio ni bajo`;
+    }
+}
+
+//limpiar lista 6
+function reinicio6(e) {
+    e.preventDefault();
+    const rspt6 = document.getElementById("rspt6");
+    ppt = 0;
+    pt = [];
+    po = 0;
+    pp = 0;
+    sum = 0;
+    rspt6.textContent = "";
+}

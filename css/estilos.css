@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
-.Rta_1{
+.Rta{
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .Boton{
@@ -24,6 +25,7 @@
 }
 
 .punto{
+    color: black;
     margin: 0;
     margin-bottom: 10px;
     font-size: 20px
@@ -33,7 +35,7 @@
     border: 1px solid #4ca1dac8;
     margin-bottom: 10px;
     padding: 10px 9px;
-    background: rgba(186, 178, 178, 0.745);
+    background: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: bold;
 }
@@ -41,9 +43,45 @@
     border: 1px solid #4ca1dac8;
     margin-bottom: 10px;
     padding: 10px 9px;
+    background: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
 }
 .container{
     margin: 20px;
     padding: auto;
     box-sizing: border-box;
+}
+
+.body{
+    font-family: Arial;
+    background-image: url(/imagenes/br.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.Titulo{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.puntos{
+    box-sizing: content-box;
+    padding: 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 50%;
+    height: 100% ;
+    max-width: 50%;
+    color: white;
+    border: 3px solid white;
+    background-color: white;
+}
+
+.r{
+    font-family: Arial;
+    color: #000;
 }

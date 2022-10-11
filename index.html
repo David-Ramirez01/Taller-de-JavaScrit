@@ -8,50 +8,51 @@
     <link rel="stylesheet" href="css/estilos.css">
     <Script type="text/javascript" src="js/datos.js"></Script>
 </head>
-<body>
+<body class="body">
     <div class="container">
-        <div class="punto_uno">
+        <h1 class=" Titulo">Taller De Buenas Practicas</h1>
+        <div class="puntos">
             <h2 class="punto">
                 Primer punto
             </h2>
-            <form class="Rta_1">
+            <form class="Rta">
                 <input class="Caja" type="text" name="placa" id="N_placa" placeholder="ingrese ultimo # de placa">
                 <input class="Boton" type="submit" value="Color de placa" onclick="ColorPla(event)">
                 <input class="Boton" type="submit" value="Limpiar lista" onclick="reincio(event)">
-                <h4 id="rspt1">
+                <h4 class="r" id="rspt1">
                 </h4>
             </form>
         </div>
-        <div class="punto_dos">
+        <div class="puntos">
             <h2 class="punto">
                 Punto Dos
             </h2>
-            <form class="Rta_2">
+            <form class="Rta">
                 <input class="Caja" type="text" name="e_animal" id="E_Animal" placeholder="Edad del Animal">
                 <input class="Boton" type="submit" value="Guardar" onclick="CalcPEdad(event)">
                 <input class="Boton" type="submit" value="Calcular porcentajes" onclick="Porcentajes(event)">
                 <input class="Boton" type="submit" value="Limpiar lista" onclick="reincio2(e)">
-                <h4 id="rspt2">
+                <h4 class="r" id="rspt2">
                 </h4>
             </form>
         </div>
-        <div class="punto_Tres">
+        <div class="puntos">
             <h2 class="punto">
                 Punto Tres
             </h2>
-            <form class="Rta_3">
+            <form class="Rta">
                 <input class="Caja" type="text" name="H_traba" id="H_traba" placeholder="Horas trabajadas">
                 <input class="Boton" type="submit" value="Calcular Salario" onclick="salario(event)">
                 <input class="Boton" type="submit" value="Limpiar" onclick="reincio3(event)">
-                <h4 id="rspt3">
+                <h4 class="r" id="rspt3">
                 </h4>
             </form>
         </div>
-        <div class="punto_Cuatro">
+        <div class="puntos">
             <h2 class="punto">
                 Punto Cuatro
             </h2>
-            <form class="Rta_4">
+            <form class="Rta">
                 <input class="Caja" type="text" name="Edad" id="Edad" placeholder="Digite edad"><br>
                 <select id="Gender" class="Seleccion">
                     <option value="">     </option>
@@ -61,20 +62,35 @@
                 <input class="Boton" type="submit" value="Guardar" onclick="Guard_edades(event)">
                 <input class="Boton" type="submit" value="Promedio Edades" onclick="Promedio(event)">
                 <input class="Boton" type="submit" value="Limpiar" onclick="reincio4(event)">
-                <h4 id="rspt4">
+                <h4 class="r" id="rspt4">
                 </h4>
             </form>
         </div>
-        <div class="punto_Cinco">
+        <div class="puntos">
             <h2 class="punto">
                 Punto Cinco
             </h2>
-            <form class="Rta_5">
+            <form class="Rta">
                 <input class="Caja" type="text" name="Num" id="Numero" placeholder="Digite Los numeros">
                 <input class="Boton" type="submit" value="Guardar" onclick="guardar(event)">
                 <input class="Boton" type="submit" value="Numero Menor" onclick="num_min(event)">
                 <input class="Boton" type="submit" value="Limpiar" onclick="reincio5(event)">
-                <h4 id="rspt5">
+                <h4 class="r" id="rspt5">
+                </h4>
+            </form>
+        </div>
+        <div class="puntos">
+            <h2 class="punto">
+                Punto Seis
+            </h2>
+            <form class="Rta">
+                <input class="Caja" type="text" name="Pes" id="OrgPes" placeholder="Peso Original"> 
+                <input class="Boton" type="submit" value="Guardar" onclick="g_po(event)"><br>
+                <input class="Caja" type="text" name="Pes_Bas" id="Peso_V" placeholder="Pesos de bascula">
+                <input class="Boton" type="submit" value="Guardar" onclick="gpp(event)">
+                <input class="Boton" type="submit" value="Comparar" onclick="compp(event)">
+                <input class="Boton" type="submit" value="Limpiar" onclick="reinicio6(event)">
+                <h4 class="r" id="rspt6">
                 </h4>
             </form>
         </div>
