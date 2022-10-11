@@ -318,3 +318,51 @@ function reinicio7(e) {
     suma_c= 0;
     rspt7.textContent = "";
 }
+
+
+//ejercicio 8
+let Ed_ = [];
+let N_P = "";
+
+//funcion ejercicio 8
+function CalcuPers(e) {
+    e.preventDefault();
+    const rspt8 = document.getElementById("rspt8");
+    const Ed = document.getElementById("Ed");
+    if (parseInt(Ed.value) < 5 ) {
+        rspt8.textContent = "No puede entrar al teatro";
+    }else{
+        Ed_.push(Ed.value);
+        rspt8.textContent = "Guardado";
+    }
+}
+
+//Funcion Calcukar Perdida
+function CalPer(e) {
+    e.preventDefault();
+    const rspt8 = document.getElementById("rspt8");
+    const Ed = document.getElementById("Ed");
+    for (let i = 0; i < Ed_.length; i++) {
+        if (parseInt(Ed.value) >= 5 && parseInt(Ed.value) <= 14) {
+            N_P = "Perdidad del 35%";
+        }else if (parseInt(Ed.value) >= 15 && parseInt(Ed.value) <= 19 ){
+            N_P = "Perdidad del 25%";
+        }else if (parseInt(Ed.value) >= 20 && parseInt(Ed.value) <= 45 ){
+            N_P = "Perdidad del 10%";
+        }else if (parseInt(Ed.value) >= 46 && parseInt(Ed.value) <= 65 ){
+            N_P = "Perdidad del 25%";
+        }else if (parseInt(Ed.value) >= 66) {
+            N_P = "Perdidad del 35%";
+        }
+    }
+    rspt8.textContent = `Perdida de ${N_P}`;
+}
+
+//limpiar lista 8
+function reinicio8(e) {
+    e.preventDefault();
+    const rspt8 = document.getElementById("rspt8");
+    Ed_ = [];
+    N_P = "";
+    rspt8.textContent = "";
+}
