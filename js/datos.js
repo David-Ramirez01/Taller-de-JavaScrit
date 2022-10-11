@@ -396,3 +396,51 @@ function reinicio9(e) {
     com = 0;
     rspt9.textContent="";
 }
+
+//Ejercicio 10
+
+let vc1 = 0;
+let vc2 = 0;
+let vc3 = 0;
+
+function guardaV(e) {
+    e.preventDefault();
+    const rspt10 = document.getElementById("rspt10");
+    const votos = document.getElementById("Voto");
+    const candidat = document.getElementById("Candidat");
+    if ( candidat.value == "1" ) {
+        vc1 += parseInt(votos.value);
+        rspt10.textContent= "Guardado para candidato 1";
+    }else if (candidat.value == "2") {
+        vc2 += parseInt(votos.value);
+        rspt10.textContent= "Guardado para candidato 2";
+    }else if (candidat.value == "3") {
+        vc3 += parseInt(votos.value);
+        rspt10.textContent= "Guardado para candidato 3";
+    }
+}
+
+
+function CompVot(e) {
+    e.preventDefault();
+    const rspt10 = document.getElementById("rspt10");
+    if (vc1 > vc2 && vc1>vc3) {
+        rspt10.textContent= "El candidato 1 gano";
+    }else if( vc2 > vc1 && vc2 > vc3) {
+        rspt10.textContent= "El candidato 2 gano";
+    }else if (vc3 > vc1 && vc3 > vc2) {
+        rspt10.textContent= "El candidato 3 gano";
+    }else{
+        rspt10.textContent= "empate";
+    }
+}
+
+function Reinicio10(e) {
+    e.preventDefault();
+    const rspt10 = document.getElementById("rspt10");
+    vc1 = 0;
+    vc2 = 0;
+    vc3 = 0;
+    rspt10.textContent="";
+}
+//Ejercicio 11

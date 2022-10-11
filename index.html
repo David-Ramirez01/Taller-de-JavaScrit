@@ -71,7 +71,7 @@
                 Punto Cinco
             </h2>
             <form class="Rta">
-                <input class="Caja" type="text" name="Num" id="Numero" placeholder="Digite Los numeros">
+                <input class="Caja" type="text" name="Numero" id="Numero" placeholder="Digite Los numeros">
                 <input class="Boton" type="submit" value="Guardar" onclick="guardar(event)">
                 <input class="Boton" type="submit" value="Numero Menor" onclick="num_min(event)">
                 <input class="Boton" type="submit" value="Limpiar" onclick="reincio5(event)">
@@ -84,7 +84,7 @@
                 Punto Seis
             </h2>
             <form class="Rta">
-                <input class="Caja" type="text" name="Pes" id="OrgPes" placeholder="Peso Original"> 
+                <input class="Caja" type="text" name="OrgPes" id="OrgPes" placeholder="Peso Original"> 
                 <input class="Boton" type="submit" value="Guardar" onclick="g_po(event)"><br>
                 <input class="Caja" type="text" name="Pes_Bas" id="Peso_V" placeholder="Pesos de bascula">
                 <input class="Boton" type="submit" value="Guardar" onclick="gpp(event)">
@@ -138,13 +138,17 @@
                 Punto Diez
             </h2>
             <form class="Rta">
-                <input class="Caja" type="text" name="Pes" id="OrgPes" placeholder="Peso Original"> 
-                <input class="Boton" type="submit" value="Guardar" onclick="g_po(event)"><br>
-                <input class="Caja" type="text" name="Pes_Bas" id="Peso_V" placeholder="Pesos de bascula">
-                <input class="Boton" type="submit" value="Guardar" onclick="gpp(event)">
-                <input class="Boton" type="submit" value="Comparar" onclick="compp(event)">
-                <input class="Boton" type="submit" value="Limpiar" onclick="reinicio6(event)">
-                <h4 class="r" id="rspt6">
+                <input class="Caja" type="text" name="Voto" id="Voto" placeholder="Voto"><br>
+                <select id="Candidat" class="Seleccion">
+                    <option value="">     </option>
+                    <option value="1">candidato1</option>
+                    <option value="2">Candidato2</option>
+                    <option value="3">Candidato3</option>
+                </select><br>
+                <input class="Boton" type="submit" value="Guardar" onclick="guardaV(event)">
+                <input class="Boton" type="submit" value="Promediar votos" onclick="CompVot(event)">
+                <input class="Boton" type="submit" value="Limpiar" onclick="Reinicio10(event)">
+                <h4 class="r" id="rspt10">
                 </h4>
             </form>
         </div>
@@ -153,13 +157,11 @@
                 Punto Once
             </h2>
             <form class="Rta">
-                <input class="Caja" type="text" name="Pes" id="OrgPes" placeholder="Peso Original"> 
-                <input class="Boton" type="submit" value="Guardar" onclick="g_po(event)"><br>
-                <input class="Caja" type="text" name="Pes_Bas" id="Peso_V" placeholder="Pesos de bascula">
-                <input class="Boton" type="submit" value="Guardar" onclick="gpp(event)">
-                <input class="Boton" type="submit" value="Comparar" onclick="compp(event)">
-                <input class="Boton" type="submit" value="Limpiar" onclick="reinicio6(event)">
-                <h4 class="r" id="rspt6">
+                <input class="Caja" type="text" name="NumI" id="NumI" placeholder="Numero Inicial"> 
+                <input class="Caja" type="text" name="NumF" id="NumF" placeholder="Numero Final">
+                <input class="Boton" type="submit" value="Determinar" onclick="">
+                <input class="Boton" type="submit" value="Limpiar" onclick="">
+                <h4 class="r" id="rspt11">
                 </h4>
             </form>
         </div>

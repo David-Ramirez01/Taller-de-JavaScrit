@@ -35,7 +35,7 @@
     border: 1px solid #4ca1dac8;
     margin-bottom: 10px;
     padding: 10px 9px;
-    background: rgb(255, 255, 255);
+    background: rgba(164, 163, 163, 0.676);
     font-size: 14px;
     font-weight: bold;
 }
@@ -43,7 +43,7 @@
     border: 1px solid #4ca1dac8;
     margin-bottom: 10px;
     padding: 10px 9px;
-    background: rgb(255, 255, 255);
+    background: rgba(164, 163, 163, 0.676);
     font-size: 14px;
     font-weight: bold;
 }
