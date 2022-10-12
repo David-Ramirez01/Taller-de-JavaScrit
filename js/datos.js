@@ -521,3 +521,43 @@ function reinicio12(e) {
     pron = 0;
     rspt12.textContent = "";
 }
+
+
+//Ejercicio 13
+
+let secf = [];
+secf[0] = 0;
+secf[1] = 1;
+let parf = 0;
+let imparf = 0;
+let c = 0;
+function tipoNF(e) {
+    e.preventDefault();
+    const rspt13 = document.getElementById("rspt13");
+    const Lsf = document.getElementById("Lsf");
+    for (let i = 2; i < Lsf.value; i++) {
+        secf[i] = secf[i - 2] + secf[i - 1];
+    }
+    for (let i = 0; i < secf.length; i++) {
+        if(secf[i] == 0){
+            c++
+        }else if (secf[i] % 2 == 0) {
+            parf++;
+        }else{
+            imparf++;
+        }
+    }
+    rspt13.textContent = `La secuencia de longitud ${secf.length} tiene ${parf} pares, ${imparf} impares y ${c} ceros`;
+}
+
+function reinicio13(e) {
+    e.preventDefault();
+    const rspt13 = document.getElementById("rspt13");
+    secf = [];
+    secf[0] = 0;
+    secf[1] = 1;
+    parf = 0;
+    imparf = 0;
+    c = 0;
+    rspt13.textContent = "";
+}
