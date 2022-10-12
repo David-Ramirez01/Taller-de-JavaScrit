@@ -561,3 +561,32 @@ function reinicio13(e) {
     c = 0;
     rspt13.textContent = "";
 }
+
+//ejercicio 14
+
+let nu1 = 0;
+let nu2 = 0;
+let tem = 0;
+function mcd(e) {
+    e.preventDefault();
+    const rspt14 = document.getElementById("rspt14");
+    const Pnum = document.getElementById("Pnum");
+    const Snum = document.getElementById("Snum");
+    nu1 = Math.abs(Pnum.value);
+    nu2 = Math.abs(Snum.value);
+    while (nu2 != 0) {
+        tem = nu2;
+        nu2 = nu1 % nu2 ;
+        nu1 = tem;
+    }
+    rspt14.textContent = `El Maximo comun divisor de ${Pnum.value} y ${Snum.value} es: ${tem}`;
+}
+
+function reinicio14(e) {
+    e.preventDefault();
+    const rspt14 = document.getElementById("rspt14");
+    nu1 = 0;
+    nu2 = 0;
+    tem = 0;
+    rspt14.textContent = "";
+}
