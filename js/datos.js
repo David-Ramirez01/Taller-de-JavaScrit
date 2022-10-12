@@ -590,3 +590,30 @@ function reinicio14(e) {
     tem = 0;
     rspt14.textContent = "";
 }
+
+//ejercicio 15
+
+let pp1 = 25 ;
+let c1 = 25 * 0.02;
+let pp2 = 19.9;
+let c2 = 19.9 * 0.03;
+let fec = 1994;
+function crecimiento(e) {
+    e.preventDefault();
+    const rspt15 = document.getElementById("rspt15");
+    while(pp1 > pp2) {
+        pp1 = pp1 + c1;
+        pp2 = pp2 + c2;
+        fec = fec +1;
+    }
+        rspt15.textContent = `al Pais B superara el pais A en poblacion en ${fec}`;
+}
+
+function reinicio15(e) {
+    e.preventDefault();
+    const rspt15 = document.getElementById("rspt15");
+    pp1 = 25 ;
+    pp2 = 19.9;
+    fec = 1994;
+    rspt15.textContent = "";
+}
