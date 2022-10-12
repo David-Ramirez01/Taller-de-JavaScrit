@@ -451,7 +451,7 @@ let prom = 0;
 let prim = [];
 let con = 0;
 
-    
+
 
 function Resultados_op(e){
     e.preventDefault();
@@ -491,4 +491,33 @@ function reinicio11(e) {
     prim = [];
     con = 0;
     rspt11.textContent= "";
+}
+
+//Ejercicio 12
+
+let smn = 0;
+let prn = 1;
+let pron = 0;
+
+//funcion Numeros
+function PropNum(e) {
+    e.preventDefault();
+    const rspt12 = document.getElementById("rspt12");
+    const nuP = document.getElementById("NumPE");
+    for (let i = 0 ; i < (nuP.value).length; i++) {
+        smn += parseInt(nuP.value[i]);
+        prn *= parseInt(nuP.value[i]);
+    }
+    pron = smn / (nuP.value).length;
+    rspt12.textContent = `La longitud de ${parseInt(nuP.value)} es:${(nuP.value).length}, su sumatoria es:${smn}, productoria de:${prn} y su promedio es:${pron}`;
+}
+
+
+function reinicio12(e) {
+    e.preventDefault();
+    const rspt12 = document.getElementById("rspt12");
+    smn = 0;
+    prn = 1;
+    pron = 0;
+    rspt12.textContent = "";
 }
